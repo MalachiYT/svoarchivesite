@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourcevoid Online ARCHIVES</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <a class="logo" href="index.html">
+            <img src="images/logotemp.png" alt="Sourcevoid Online+">
+        </a>
+        <section class="defaultcard archivecard" aria-labelledby="archive-title">
+            <h2 id="archive-title">Archives</h2>
+            <p class="subtitle">A growing collection of Sourcevoid Online versions, archived and easily-browsable on this site.</p>
+            <div class="archive-controls">
+                <input id="file-filter" type="search" placeholder="Search files" aria-label="Search files">
+                <select id="build-filter" aria-label="Filter by build type">
+                    <option value="all">All builds</option>
+                    <option value="stable">Stable</option>
+                    <option value="prerelease">Pre-release</option>
+                    <option value="beta">Beta</option>
+                    <option value="patch">Patch</option>
+                    <option value="experimental">Experimental</option>
+                </select>
+            </div>
+            <p id="file-status" role="status">Loading files...</p>
+            <ul id="file-list"></ul>
+
+            <a class="archive-link" href="https://archive.org/details/sourcevoid-online-archiveproject">View the archive on archive.org</a>
+        </section>
+    </div>
+    <footer class="site-footer">
+        The Sourcevoid Archive Project is not affiliated with, or endorsed by, 333 SOFTWARE.
+    </footer>
+    <script src="archive.js"></script>
+</body>
+</html>
